@@ -1,0 +1,12 @@
+<p>product-list works!</p>
+
+<div *ngFor="let product of products">
+  <h3>{{product.name}}</h3>
+  {{product.price}}
+
+  <app-product-alerts 
+    [product]="product" 
+    (notify)="onNotify()"
+  >
+  </app-product-alerts>
+</div>
