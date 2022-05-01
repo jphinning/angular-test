@@ -1,13 +1,6 @@
-<h1> {{title}}</h1>
+<app-top-bar></app-top-bar>
 
-<p> {{state}} </p>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
 
-<button type="button" (click)="changeState()">
-  test
-</button>
-
-<a [title]="title + ' details'"> testing </a>
-
-<app-product-list>  
-
-<button type="button" (click)="share()" > Share, please </button>

@@ -12,4 +12,8 @@ export class ProductListComponent {
   onNotify() {
     window.alert('Event caught');
   }
+
+  share() {
+    console.log('shared');
+  }
 }
