@@ -11,4 +11,8 @@ export class ShippingComponent {
   constructor(private cart: CartService) {}
 
   shippingCosts = this.cart.getShippingPrices();
+
+  testingConsole() {
+    this.cart.getShippingPrices().subscribe((list) => console.log(list));
+  }
 }
